@@ -4,9 +4,9 @@ import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:testcase/core/class/case.dart';
 import 'package:testcase/core/navigator/navigator_service.dart';
-import 'package:testcase/presentation/add_pages/view/add_pages_page.dart';
+import 'package:testcase/presentation/add_pages/view/add_pages.dart';
 import 'package:testcase/presentation/detail_pages/argument/detail_pages_argument.dart';
-import 'package:testcase/presentation/detail_pages/view/detail_pages_page.dart';
+import 'package:testcase/presentation/detail_pages/view/detail_pages.dart';
 import 'package:testcase/presentation/list_pages/constant/list_pages_constant.dart';
 import 'package:testcase/presentation/list_pages/controller/list_pages_controller.dart';
 import 'package:testcase/presentation/list_pages/model/list_pages_get_ticket_model.dart';
@@ -44,7 +44,7 @@ class ListPages extends StatelessWidget {
             onPressed: () async {
               final controller = context.read<ListPagesController>();
               final result = await Navigate.navigateTo(
-                AddPagesPage.page,
+                AddPages.page,
               );
 
               if (result == true) {
@@ -137,7 +137,7 @@ class _Body extends StatelessWidget {
                       return InkWell(
                         onTap: () async {
                           final result = await Navigate.navigateToWithArgmnt(
-                            DetailPagesPage.page,
+                            DetailPages.page,
                             DetailPagesArgument(id: e.id),
                           );
 

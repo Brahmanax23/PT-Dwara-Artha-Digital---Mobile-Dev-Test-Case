@@ -8,12 +8,12 @@ import 'package:testcase/presentation/detail_pages/controller/detail_pages_contr
 import 'package:testcase/presentation/detail_pages/model/detail_pages_view_model.dart';
 import 'package:testcase/presentation/detail_pages/service/detail_pages_service.dart';
 
-class DetailPagesPage extends StatelessWidget {
+class DetailPages extends StatelessWidget {
   static const page = '/detail_pages';
 
   final DetailPagesArgument argument;
 
-  const DetailPagesPage({
+  const DetailPages({
     super.key,
     required this.argument,
   });
@@ -45,7 +45,7 @@ class DetailPagesPage extends StatelessWidget {
               ),
               centerTitle: false,
               title: const Text(
-                'Detail Pages',
+                'Detail & Edit Ticket',
                 style: TextStyle(
                   color: Colors.black,
                 ),
@@ -96,7 +96,9 @@ class _Body extends StatelessWidget {
                   readOnly: true,
                   controller: vm.categoryText,
                 ),
-                SizedBox(height: 3.h),
+                SizedBox(height: 2.h),
+                const Text('Status'),
+                SizedBox(height: 1.5.h),
                 Selector<DetailPagesController, String>(
                   selector: (_, c) => c.viewModel.statusState.value,
                   builder: (_, statusState, __) {

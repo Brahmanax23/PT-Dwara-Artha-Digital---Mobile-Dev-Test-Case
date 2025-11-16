@@ -6,10 +6,10 @@ import 'package:testcase/presentation/add_pages/controller/add_pages_controller.
 import 'package:testcase/presentation/add_pages/model/add_pages_view_model.dart';
 import 'package:testcase/presentation/add_pages/service/add_pages_service.dart';
 
-class AddPagesPage extends StatelessWidget {
+class AddPages extends StatelessWidget {
   static const page = '/add_pages';
 
-  const AddPagesPage({
+  const AddPages({
     super.key,
   });
   @override
@@ -39,7 +39,7 @@ class AddPagesPage extends StatelessWidget {
               ),
               centerTitle: false,
               title: const Text(
-                'Add Pages',
+                'Add Ticket',
                 style: TextStyle(
                   color: Colors.black,
                 ),

@@ -124,7 +124,7 @@ class _ListPagesItem extends StatelessWidget {
                             title: const Padding(
                               padding: EdgeInsets.zero,
                               child: Text(
-                                'Deskripsi',
+                                'Description',
                                 style: TextStyle(
                                   fontSize: 14,
                                 ),
