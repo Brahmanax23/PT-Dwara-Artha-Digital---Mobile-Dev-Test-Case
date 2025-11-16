@@ -61,6 +61,12 @@ https://github.com/Brahmanax23/PT-Dwara-Artha-Digital---Mobile-Dev-Test-Case/tre
 Flutter SDK    : 3.24.0
 Dart SDK       : 3.5.0
 
+- Setelah dibuka via IDE, jalankan command untuk memasang dan mengunduh semua dependency dari pubspec.yaml:
+
+    'flutter pub get' 
+
+melalui terminal yang bisa diakses melalui Menu Bar Terminal, dan 'New Terminal' apa bila pada saat inisiasi IDE tidak ada terminal.
+
 - Pilih device untuk menjalankan debug pada kanan bawah, gunakan AVD (Android Virtual Device), Emulator, atau gunakan telepon genggam pengguna (developer mode) untuk menjalankan aplikasi.
 
 - Apabila menggunakan VS code sebagai IDE, bisa gunakan 'Run' pada 'Menu Bar', lalu 'Start Debugging' atau 'Run without debugging'. Disediakan juga settings.json untuk proses debugging dengan menekan debug icon pada 'Activity Bar', dan pada dropdown 'RUN AND DEBUG' tekan tombol play pada 'app-testcase'.
